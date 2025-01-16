@@ -1,6 +1,6 @@
 {
   "name": "@vercel/remix",
-  "version": "2.7.2",
+  "version": "2.15.2",
   "description": "Isomorphic runtime + adapter for Remix on Vercel",
   "repository": {
     "type": "git",
@@ -28,17 +28,23 @@
     },
     "./package.json": "./package.json"
   },
+  "scripts": {
+    "tsc": "tsc"
+  },
   "dependencies": {
-    "@remix-run/node": "2.7.2",
-    "@remix-run/server-runtime": "2.7.2",
     "@vercel/static-config": "3.0.0",
     "isbot": "^3.6.8",
     "ts-morph": "12.0.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "2.7.2"
+    "@remix-run/dev": "2.15.2",
+    "@remix-run/node": "2.15.2",
+    "@remix-run/server-runtime": "2.15.2"
   },
   "peerDependencies": {
+    "@remix-run/dev": "2.15.2",
+    "@remix-run/node": "2.15.2",
+    "@remix-run/server-runtime": "2.15.2",
     "react": "*",
     "react-dom": "*"
   },
@@ -48,6 +54,7 @@
   "files": [
     "dist/",
     "defaults/",
+    "entry-server-shas.json",
     "globals.js",
     "globals.d.ts",
     "server.js",

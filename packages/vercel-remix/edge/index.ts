@@ -10,6 +10,7 @@ export { handleRequest } from "./entry.server";
 export {
   createRequestHandler,
   createSession,
+  data,
   defer,
   broadcastDevReady,
   logDevReady,
@@ -19,6 +20,7 @@ export {
   MaxPartSizeExceededError,
   redirect,
   redirectDocument,
+  replace,
   unstable_composeUploadHandlers,
   unstable_createMemoryUploadHandler,
   unstable_parseMultipartFormData,
@@ -36,6 +38,7 @@ export type {
   DataFunctionArgs,
   EntryContext,
   ErrorResponse,
+  Future,
   HandleDataRequestFunction,
   HandleDocumentRequestFunction,
   HeadersArgs,
